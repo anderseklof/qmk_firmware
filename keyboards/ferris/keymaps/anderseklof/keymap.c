@@ -28,9 +28,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   // NAVIGATION
   [1] = LAYOUT(
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,         KC_HOME,     KC_PGDN, KC_PGUP, KC_END,         KC_NO,
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,         KC_LEFT,     KC_DOWN, KC_UP,   KC_RGHT,        KC_NO,
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,         KC_WWW_BACK, KC_NO,   KC_NO,   KC_WWW_FORWARD, KC_NO,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,         KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_NO,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,         KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_NO,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,         KC_WBAK, KC_NO,   KC_NO,   KC_WFWD, KC_NO,
                        SFT_T(KC_BSPC), CTL_T(KC_DEL), CTL_T(KC_ENT), SFT_T(KC_SPC)
 
   //                  shift/left      ctrl/right      back         forward
@@ -94,12 +94,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_F9, KC_F10, KC_F11, KC_F12, KC_MNXT,         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
                   SFT_T(KC_BSPC), CTL_T(KC_DEL), CTL_T(KC_ENT), SFT_T(KC_SPC)
   ),
-  // COPY-PASTE AND NAVIGTION
+  // COPY-PASTE AND NAVIGATION
   [8] = LAYOUT(
-    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,         KC_HOME, KC_PGDN, KC_PGUP, KC_END,   KC_NO,
-    C(KC_A), KC_NO,   KC_NO,   KC_NO,   KC_NO,         KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, KC_NO,
-    KC_NO,   C(KC_X), C(KC_C), C(KC_V), TO(9),         KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,
-                     SFT_T(KC_BSPC), CTL_T(KC_DEL), CTL_T(KC_ENT), SFT_T(KC_SPC)
+    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                KC_HOME,        KC_PGDN, KC_PGUP, KC_END,   KC_NO,
+    C(KC_A), KC_NO,   KC_NO,   KC_NO,   KC_NO,                KC_LEFT,        KC_DOWN, KC_UP,   KC_RGHT,  KC_NO,
+    KC_NO,   C(KC_X), C(KC_C), C(KC_V), C_S_T(TO(9)),         C_S_T(KC_WBAK), KC_NO,   KC_NO,   KC_WFWD,  KC_NO,
+                            SFT_T(KC_BSPC), CTL_T(KC_DEL), CTL_T(KC_ENT), SFT_T(KC_SPC)
   ),
 };
 

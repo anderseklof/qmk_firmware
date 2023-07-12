@@ -31,7 +31,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,         KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_NO,
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,         KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_NO,
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,         KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, KC_NO,
-  //                  shift/left      ctrl/right       back         forward
+  //                  shift/left      ctrl/right      back         forward
                       SFT_T(KC_BTN1), CTL_T(KC_BTN2), KC_WWW_BACK, KC_WWW_FORWARD
   ),
   // LANGUAGE
@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,         ALGR(KC_RBRC), ALGR(KC_2),    S(KC_5), S(KC_MINS), KC_QUOT,
   //                                                                                   ´                    ´
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,         KC_NO,         KC_NO,         KC_EQL,  KC_NO,      KC_EQL,
-                                    KC_LSFT, KC_LCTL, KC_RCTL, KC_RSFT
+                       SFT_T(KC_BSPC), CTL_T(KC_DEL), CTL_T(KC_ENT), SFT_T(KC_SPC)
   ),
   // PROGRAMMING
   [3] = LAYOUT(
@@ -52,7 +52,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_NO, ALGR(KC_7), ALGR(KC_0), ALGR(KC_8), ALGR(KC_9),         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
   //       <           >
     KC_NO, KC_NUBS,    S(KC_NUBS), KC_NO,      KC_NO,              KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                                              KC_LSFT, KC_LCTL, KC_RCTL, KC_RSFT
+                                 SFT_T(KC_BSPC), CTL_T(KC_DEL), CTL_T(KC_ENT), SFT_T(KC_SPC)
   ),
   // PROGRAMMING SYMBOLS
   [4] = LAYOUT(
@@ -62,7 +62,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     S(KC_SLSH), S(KC_0), S(KC_1),       KC_NUHS,   S(KC_2),        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
   //                     $              `
     KC_NO,      KC_NO,   ALGR(KC_4),    S(KC_EQL), KC_NO,          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                                              KC_LSFT, KC_LCTL, KC_RCTL, KC_RSFT
+                                 SFT_T(KC_BSPC), CTL_T(KC_DEL), CTL_T(KC_ENT), SFT_T(KC_SPC)
   ),
   // HELPER
   [5] = LAYOUT(
@@ -96,7 +96,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,         KC_HOME, KC_PGDN, KC_PGUP, KC_END,   KC_NO,
     C(KC_A), KC_NO,   KC_NO,   KC_NO,   KC_NO,         KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, KC_NO,
     KC_NO,   C(KC_X), C(KC_C), C(KC_V), TO(9),         KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,
-                                  KC_LSFT, KC_LCTL, KC_RCTL, KC_RSFT
+                     SFT_T(KC_BSPC), CTL_T(KC_DEL), CTL_T(KC_ENT), SFT_T(KC_SPC)
   ),
 };
 

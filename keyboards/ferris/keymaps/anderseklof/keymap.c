@@ -96,9 +96,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   // COPY-PASTE AND NAVIGATION
   [8] = LAYOUT(
-    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                KC_HOME,        KC_PGDN, KC_PGUP, KC_END,   KC_NO,
+    KC_NO,   KC_NO,   KC_NO,   KC_NO,   TO(9),                KC_HOME,        KC_PGDN, KC_PGUP, KC_END,   KC_NO,
     C(KC_A), KC_NO,   KC_NO,   KC_NO,   KC_NO,                KC_LEFT,        KC_DOWN, KC_UP,   KC_RGHT,  KC_NO,
-    KC_NO,   C(KC_X), C(KC_C), C(KC_V), C_S_T(TO(9)),         C_S_T(KC_WBAK), KC_NO,   KC_NO,   KC_WFWD,  KC_NO,
+    KC_NO,   C(KC_X), C(KC_C), C(KC_V), C_S_T(KC_NO),         C_S_T(KC_WBAK), KC_NO,   KC_NO,   KC_WFWD,  KC_NO,
                             SFT_T(KC_BSPC), CTL_T(KC_DEL), CTL_T(KC_ENT), SFT_T(KC_SPC)
   ),
 };

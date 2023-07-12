@@ -22,7 +22,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_Q,       KC_W,       KC_E,       KC_R,       KC_T,                KC_Y,        KC_U,       KC_I,       KC_O,       KC_P,
   //COPY-PASTE  NUMBER      LANGUAGE    NAVIGATION                                    PROG SYMB   PROG        HELPER      FUNCTION
     LT(8,KC_A), LT(6,KC_S), LT(2,KC_D), LT(1,KC_F), KC_G,                KC_H,        LT(4,KC_J), LT(3,KC_K), LT(5,KC_L), LT(7,KC_SCLN),
-  //                                                shift+ctrl           shift+ctrl               ,/;         ./:         -/_
+  //                                                ctrl+shift           ctrl+shift               ,/;         ./:         -/_
     KC_Z,       KC_X,       KC_C,       KC_V,       C_S_T(KC_B),         C_S_T(KC_N), KC_M,       KC_COMM,    KC_DOT,     KC_SLSH,
                                        SFT_T(KC_BSPC), CTL_T(KC_DEL), CTL_T(KC_ENT), SFT_T(KC_SPC)
   ),
@@ -82,14 +82,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,        KC_DOT,  KC_4, KC_5, KC_6, KC_PMNS,
   //                                                    ,        1     2     3     +
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,        KC_COMM, KC_1, KC_2, KC_3, KC_PPLS,
-                                   KC_RCTL, KC_RSFT, KC_NO, KC_0
+  //                                                                0
+                      SFT_T(KC_BSPC), CTL_T(KC_DEL), CTL_T(KC_ENT), SFT_T(KC_0)
   ),
   // FUNCTION AND PLAYBACK
   [7] = LAYOUT(
     KC_F1, KC_F2,  KC_F3,  KC_F4,  KC_MPRV,         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
     KC_F5, KC_F6,  KC_F7,  KC_F8,  KC_MPLY,         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
     KC_F9, KC_F10, KC_F11, KC_F12, KC_MNXT,         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                               KC_LSFT, KC_LCTL, KC_RCTL, KC_RSFT
+                  SFT_T(KC_BSPC), CTL_T(KC_DEL), CTL_T(KC_ENT), SFT_T(KC_SPC)
   ),
   // COPY-PASTE AND NAVIGTION
   [8] = LAYOUT(

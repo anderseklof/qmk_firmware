@@ -19,6 +19,7 @@
 # Build and flash firmware
 
 -   Navigate to `qmk_firmware` directory. `qmk cd` is a shortcut.
+-   Run: `qmk git-submodule` to update submodules.
 -   Run: `qmk compile -kb ferris/sweep_choc_mbuk -km anderseklof`. If `qmk` is not found, export the `PATH`: `export PATH=$PATH:~/.local/bin`
 -   Open `qmk_toolbox`.
 -   Select `ferris_sweep_choc_mbuk_anderseklof.hex`.

@@ -28,11 +28,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   // NAVIGATION
   [1] = LAYOUT(
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,         KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_NO,
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,         KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_NO,
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,         KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, KC_NO,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,         KC_HOME,     KC_PGDN, KC_PGUP, KC_END,         KC_NO,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,         KC_LEFT,     KC_DOWN, KC_UP,   KC_RGHT,        KC_NO,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,         KC_WWW_BACK, KC_NO,   KC_NO,   KC_WWW_FORWARD, KC_NO,
+                       SFT_T(KC_BSPC), CTL_T(KC_DEL), CTL_T(KC_ENT), SFT_T(KC_SPC)
+
   //                  shift/left      ctrl/right      back         forward
-                      SFT_T(KC_BTN1), CTL_T(KC_BTN2), KC_WWW_BACK, KC_WWW_FORWARD
+  //                  SFT_T(KC_BTN1), CTL_T(KC_BTN2), KC_WWW_BACK, KC_WWW_FORWARD
   ),
   // LANGUAGE
   [2] = LAYOUT(

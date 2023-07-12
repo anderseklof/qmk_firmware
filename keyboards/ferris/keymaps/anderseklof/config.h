@@ -21,7 +21,8 @@
 
 #define TAPPING_TERM 180
 #define PERMISSIVE_HOLD
-#define IGNORE_MOD_TAP_INTERRUPT
+// Not needed, this is now default behavior in qmk.
+//#define IGNORE_MOD_TAP_INTERRUPT
 
 // Handle master/slave detection on low cost Promicro
 #ifdef __AVR__

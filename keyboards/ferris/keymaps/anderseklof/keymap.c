@@ -19,12 +19,14 @@ combo_t key_combos[] = {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // BASE
   [0] = LAYOUT(
-    KC_Q,       KC_W,       KC_E,       KC_R,       KC_T,                KC_Y,        KC_U,       KC_I,       KC_O,       KC_P,
-  //COPY-PASTE  NUMBER      LANGUAGE    NAVIGATION                                    PROG SYMB   PROG        HELPER      FUNCTION
-    LT(8,KC_A), LT(6,KC_S), LT(2,KC_D), LT(1,KC_F), KC_G,                KC_H,        LT(4,KC_J), LT(3,KC_K), LT(5,KC_L), LT(7,KC_SCLN),
-  //                                                ctrl+shift           ctrl+shift               ,/;         ./:         -/_
-    KC_Z,       KC_X,       KC_C,       KC_V,       C_S_T(KC_B),         C_S_T(KC_N), KC_M,       KC_COMM,    KC_DOT,     KC_SLSH,
-                                       SFT_T(KC_BSPC), CTL_T(KC_DEL), CTL_T(KC_ENT), SFT_T(KC_SPC)
+  //                  COMBO       COMBO                                         COMBO       COMBO
+  //                  ESC         COPY-PASTE                                    COPY-PASTE  ESC
+    KC_Q, KC_W,       KC_E,       KC_R,       KC_T,                KC_Y,        KC_U,       KC_I,       KC_O,       KC_P,
+  //      NUMBER      LANGUAGE    NAVIGATION                                    PROG SYMB   PROG        HELPER      FUNCTION
+    KC_A, LT(6,KC_S), LT(2,KC_D), LT(1,KC_F), KC_G,                KC_H,        LT(4,KC_J), LT(3,KC_K), LT(5,KC_L), LT(7,KC_SCLN),
+  //                                          ctrl+shift           ctrl+shift               ,/;         ./:         -/_
+    KC_Z, KC_X,       KC_C,       KC_V,       C_S_T(KC_B),         C_S_T(KC_N), KC_M,       KC_COMM,    KC_DOT,     KC_SLSH,
+                                 SFT_T(KC_BSPC), CTL_T(KC_DEL), CTL_T(KC_ENT), SFT_T(KC_SPC)
   ),
   // NAVIGATION
   [1] = LAYOUT(
@@ -32,9 +34,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,         KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_NO,
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,         KC_WBAK, KC_NO,   KC_NO,   KC_WFWD, KC_NO,
                        SFT_T(KC_BSPC), CTL_T(KC_DEL), CTL_T(KC_ENT), SFT_T(KC_SPC)
-
-  //                  shift/left      ctrl/right      back         forward
-  //                  SFT_T(KC_BTN1), CTL_T(KC_BTN2), KC_WWW_BACK, KC_WWW_FORWARD
   ),
   // LANGUAGE
   [2] = LAYOUT(

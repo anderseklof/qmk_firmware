@@ -78,12 +78,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   // NUMBER
   [6] = LAYOUT(
-  //                                                             7     8     9     *
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,        KC_NO,   KC_7, KC_8, KC_9, KC_PAST,
-  //                                                    .        4     5     6     -
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,        KC_DOT,  KC_4, KC_5, KC_6, KC_PMNS,
-  //                                                    ,        1     2     3     +
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,        KC_COMM, KC_1, KC_2, KC_3, KC_PPLS,
+  //                                                    /        7     8     9     -
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,        KC_PSLS, KC_7, KC_8, KC_9, KC_PMNS,
+  //                                                    *        4     5     6     +
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,        KC_PAST, KC_4, KC_5, KC_6, KC_PPLS,
+  //                                                    .        1     2     3     ,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,        KC_DOT,  KC_1, KC_2, KC_3, KC_COMM,
   //                                                                0
                       SFT_T(KC_BSPC), CTL_T(KC_DEL), CTL_T(KC_ENT), SFT_T(KC_0)
   ),

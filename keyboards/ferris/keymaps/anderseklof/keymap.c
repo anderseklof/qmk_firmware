@@ -73,7 +73,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_CAPS, KC_TAB,  KC_NO, KC_NO,   LCA(KC_DEL),         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
     KC_NO,   KC_NO,   KC_NO, KC_NO,   KC_NO,               KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
   //                                  alt      windows
-                                      KC_LALT, KC_LWIN, KC_RCTL, KC_RSFT
+                                      KC_LALT, KC_LWIN, CTL_T(KC_ENT), SFT_T(KC_SPC)
   ),
   // NUMBER
   [6] = LAYOUT(

@@ -19,10 +19,10 @@
 /* // The default is 40 */
 /* #define MOUSEKEY_WHEEL_TIME_TO_MAX 100 */
 
-#define TAPPING_TERM 180
+#define TAPPING_TERM 170
 #define PERMISSIVE_HOLD
 // Default is 50ms, higher will give more time to hit both keys.
-#define COMBO_TERM 70
+#define COMBO_TERM 50
 // Not needed, this is now default behavior in qmk.
 //#define IGNORE_MOD_TAP_INTERRUPT
 

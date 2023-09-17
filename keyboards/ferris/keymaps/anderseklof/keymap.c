@@ -6,7 +6,7 @@
 uint16_t COMBO_LEN = 2;
 
 const uint16_t PROGMEM esc_combo[] = {KC_E, KC_I, COMBO_END};
-const uint16_t PROGMEM layer_9_combo[] = {KC_R, KC_U, COMBO_END};
+const uint16_t PROGMEM layer_9_combo[] = {KC_Q, KC_P, COMBO_END};
 
 combo_t key_combos[] = {
     COMBO(esc_combo, KC_ESC),
@@ -19,14 +19,14 @@ combo_t key_combos[] = {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // BASE
   [0] = LAYOUT(
-  //                  COMBO       COMBO                                         COMBO       COMBO
-  //                  ESC         COPY-PASTE                                    COPY-PASTE  ESC
-    KC_Q, KC_W,       KC_E,       KC_R,       KC_T,                KC_Y,        KC_U,       KC_I,       KC_O,       KC_P,
-  //      NUMBER      LANGUAGE    NAVIGATION                                    PROG SYMB   PROG        HELPER      FUNCTION
-    KC_A, LT(6,KC_S), LT(2,KC_D), LT(1,KC_F), KC_G,                KC_H,        LT(4,KC_J), LT(3,KC_K), LT(5,KC_L), LT(7,KC_SCLN),
-  //                                          ctrl+shift           ctrl+shift               ,/;         ./:         -/_
-    KC_Z, KC_X,       KC_C,       KC_V,       C_S_T(KC_B),         C_S_T(KC_N), KC_M,       KC_COMM,    KC_DOT,     KC_SLSH,
-                                 SFT_T(KC_BSPC), CTL_T(KC_DEL), CTL_T(KC_ENT), SFT_T(KC_SPC)
+  //COMBO                  COMBO                                                                 COMBO                   COMBO
+  //COPY-PASTE             ESC                                                                   ESC                     COPY-PASTE
+    KC_Q,      KC_W,       KC_E,       KC_R,       KC_T,                KC_Y,        KC_U,       KC_I,       KC_O,       KC_P,
+  //           NUMBER      LANGUAGE    NAVIGATION                                    PROG SYMB   PROG        HELPER      FUNCTION
+    KC_A,      LT(6,KC_S), LT(2,KC_D), LT(1,KC_F), KC_G,                KC_H,        LT(4,KC_J), LT(3,KC_K), LT(5,KC_L), LT(7,KC_SCLN),
+  //                                               ctrl+shift           ctrl+shift               ,/;         ./:         -/_
+    KC_Z,      KC_X,       KC_C,       KC_V,       C_S_T(KC_B),         C_S_T(KC_N), KC_M,       KC_COMM,    KC_DOT,     KC_SLSH,
+                                      SFT_T(KC_BSPC), CTL_T(KC_DEL), CTL_T(KC_ENT), SFT_T(KC_SPC)
   ),
   // NAVIGATION
   [1] = LAYOUT(
@@ -58,17 +58,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // PROGRAMMING SYMBOLS
   [4] = LAYOUT(
   //*           +        |              /          &
-    S(KC_NUHS), KC_MINS, ALGR(KC_NUBS), S(KC_7),   S(KC_6),        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    S(KC_NUHS), KC_MINS, ALGR(KC_NUBS), S(KC_7),   S(KC_6),         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
   //_           =        !              '          "
-    S(KC_SLSH), S(KC_0), S(KC_1),       KC_NUHS,   S(KC_2),        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    S(KC_SLSH), S(KC_0), S(KC_1),       KC_NUHS,   S(KC_2),         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
   //                     $              `
-    KC_NO,      KC_NO,   ALGR(KC_4),    S(KC_EQL), KC_NO,          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_NO,      KC_NO,   ALGR(KC_4),    S(KC_EQL), KC_NO,           KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
                                  SFT_T(KC_BSPC), CTL_T(KC_DEL), CTL_T(KC_ENT), SFT_T(KC_SPC)
   ),
   // HELPER
   [5] = LAYOUT(
-  //esc      t print  t up   t down
-    KC_ESC,  DT_PRNT, DT_UP, DT_DOWN, KC_NO,               KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+  //esc      t print  t up   t down   ctrl-alt-end
+    KC_ESC,  DT_PRNT, DT_UP, DT_DOWN, LCA(KC_END),         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
   //caps     tab                      ctrl-alt-del
     KC_CAPS, KC_TAB,  KC_NO, KC_NO,   LCA(KC_DEL),         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
     KC_NO,   KC_NO,   KC_NO, KC_NO,   KC_NO,               KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
